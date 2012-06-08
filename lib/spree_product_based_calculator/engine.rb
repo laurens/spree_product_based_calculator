@@ -1,10 +1,11 @@
 module SpreeProductBasedCalculator
   class Engine < Rails::Engine
+    require 'spree/core'
     engine_name 'spree_product_based_calculator'
     isolate_namespace Spree
 
-    config.autoload_paths += %W(#{config.root}/lib)
-
+    config.autoload_paths += %W(#{config.root}/lib #{config.root}/app/models/spree/calculator)
+    
     # use rspec for tests
     config.generators do |g|
       g.test_framework :rspec
@@ -17,5 +18,9 @@ module SpreeProductBasedCalculator
     end
 
     config.to_prepare &method(:activate).to_proc
+    
+    initializer 'spree.register.calculators' do |app|
+      app.config.spree.calculators.shipping_methods << Spree::Calculator::ProductBased
+    end
   end
 end

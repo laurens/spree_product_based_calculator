@@ -1,13 +1,27 @@
 SpreeProductBasedCalculator
-===========================
+=========================
 
-Introduction goes here.
+Allows product-based configuration of shipping rates.
 
 
-Example
+Description
 =======
 
-Example goes here.
+Calculates shipping rate based on a product’s *shipping_rate* property.
+You can customize the property that is being used in the Spree Administration area.
+
+You can set a default rate aswell that will be used for products with no specified shipping rate.
+
+Installation
+=======
+
+Simply add the gem to your Gemfile…
+
+    gem 'spree_product_based_calculator'
+
+…and run
+    
+    $ bundle install
 
 Testing
 -------
@@ -18,4 +32,4 @@ Be sure to bundle your dependencies and then create a dummy test app for the spe
     $ bundle exec rake test_app
     $ bundle exec rspec spec
 
-Copyright (c) 2012 [name of extension creator], released under the New BSD License
+Copyright (c) 2012 Laurens Nienhaus, released under the New BSD License
