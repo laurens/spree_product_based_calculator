@@ -17,7 +17,7 @@ Installation
 
 Add the gem to your Gemfile…
 
-    gem 'spree_product_based_calculator', :git => 'git://github.com/laurens/spree_product_based_calculator.git'
+    gem 'spree_product_based_calculator'
 
 …and run
     

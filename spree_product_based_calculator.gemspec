@@ -2,7 +2,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_product_based_calculator'
-  s.version     = '1.0.0'
+  s.version     = '1.0.1'
   s.summary     = 'product-based shipping rate calculator'
   s.description = 'calculates shipping rate based on a product’s shipping_rate property or a default value'
   s.required_ruby_version = '>= 1.8.7'
