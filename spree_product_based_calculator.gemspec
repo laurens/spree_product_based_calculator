@@ -2,14 +2,14 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_product_based_calculator'
-  s.version     = '1.0.1'
+  s.version     = '1.0.2'
   s.summary     = 'product-based shipping rate calculator'
   s.description = 'calculates shipping rate based on a product’s shipping_rate property or a default value'
   s.required_ruby_version = '>= 1.8.7'
 
   s.author    = 'Laurens Nienhaus'
   s.email     = 'l.nienhaus@gmail.com'
-  s.homepage  = 'http://asdfasdf.de'
+  s.homepage  = 'https://github.com/laurens/spree_product_based_calculator'
 
   #s.files       = `git ls-files`.split("\n")
   #s.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")
