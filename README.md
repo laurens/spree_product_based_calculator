@@ -26,8 +26,6 @@ Add the gem to your Gemfile…
 Testing
 -------
 
-Note: testing does not work for me at the moment, since *rake test_app* fails to migrate the database.
-
 Be sure to bundle your dependencies and then create a dummy test app for the specs to run against.
 
     $ bundle
