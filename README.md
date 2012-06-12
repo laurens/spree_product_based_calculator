@@ -12,24 +12,5 @@ You can customize the property that is being used in the Spree Administration ar
 
 You can set a default rate aswell that will be used for products with no specified shipping rate.
 
-Installation
-=======
-
-Simply add the gem to your Gemfile…
-
-    gem 'spree_product_based_calculator'
-
-…and run
-    
-    $ bundle install
-
-Testing
--------
-
-Be sure to bundle your dependencies and then create a dummy test app for the specs to run against.
-
-    $ bundle
-    $ bundle exec rake test_app
-    $ bundle exec rspec spec
 
 Copyright (c) 2012 Laurens Nienhaus, released under the New BSD License
