@@ -1,8 +1,8 @@
 module SpreeProductBasedCalculator
   class Engine < Rails::Engine
     require 'spree/core'
-    engine_name 'spree_product_based_calculator'
     isolate_namespace Spree
+    engine_name 'spree_product_based_calculator'
 
     config.autoload_paths += %W(#{config.root}/lib #{config.root}/app/models/spree/calculator)
     
