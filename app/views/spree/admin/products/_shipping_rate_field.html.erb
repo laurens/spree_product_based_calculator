@@ -1,0 +1,4 @@
+<%= f.field_container :shipping_rate do %>
+  <%= f.label :shipping_rate, t(:shipping_rate) %><br />
+  <%= f.text_field :shipping_rate, :value => number_to_currency(@product.shipping_rate, :unit => '') %>
+<% end %>

@@ -2,9 +2,9 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_product_based_calculator'
-  s.version     = '1.1.0'
+  s.version     = '2'
   s.summary     = 'product-based shipping rate calculator'
-  s.description = 'calculates shipping rate based on a product’s shipping_rate property or a default value'
+  s.description = 'calculate shipping rate based on a product’s/variant‘s shipping_rate attribute or a default value'
   s.required_ruby_version = '>= 1.8.7'
 
   s.author    = 'Laurens Nienhaus'
@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '>= 1.1.1'
+  s.add_dependency 'spree_core', '>= 1.2.0'
 
   s.add_development_dependency 'capybara', '1.0.1'
   s.add_development_dependency 'factory_girl', '~> 2.6.4'

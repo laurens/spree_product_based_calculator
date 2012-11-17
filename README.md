@@ -7,8 +7,7 @@ Allows product-based configuration of shipping rates.
 Description
 =======
 
-Calculates shipping rate based on a product’s *shipping_rate* property.
-You can customize the property that is being used in the Spree Administration area.
+Calculates shipping rate based on a product’s/variant‘s *shipping_rate* attribute.
 
 You can set a default rate that will be used for products with no specified shipping rate.
 
@@ -22,6 +21,8 @@ Add the gem to your Gemfile…
 …and run
     
     $ bundle install
+    $ rake railties:install:migrations
+    $ rake db:migrate
 
 Testing
 -------
